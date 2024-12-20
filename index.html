@@ -32,6 +32,10 @@
 <body>
     <div id="container">
         <h1>Python Code Compiler</h1>
+        <select id="problem-select" onchange="loadProblem()">
+            <option value="">Select a problem</option>
+        </select>
+        <div id="problem-content"></div>
         <textarea id="code" placeholder="Write your Python code here..."></textarea>
         <button onclick="executeCode()">Run Code</button>
         <div id="output"></div>
